@@ -8,8 +8,8 @@
 }
 body{
   font-family: sans-serif;
-  background: rgb(75,75,75);
-  background: linear-gradient(90deg, rgba(75,75,75,1) 9%, rgba(110,109,99,1) 42%, rgba(79,82,77,1) 100%, rgba(80,79,79,1) 100%);
+  background: rgb(32, 32, 32);
+  background: linear-gradient(90deg, rgb(41, 39, 39) 9%, rgb(29, 29, 27) 42%, rgb(28, 29, 28) 100%, rgb(59, 58, 58) 100%);
 }
 nav{
   
@@ -111,7 +111,7 @@ a.active,a:hover{
   background: rgb(46,47,47);
   background: linear-gradient(90deg, rgba(46,47,47,1) 16%, rgba(67,71,74,1) 68%, rgba(66,69,75,1) 100%);
   border-top: 2px solid #221f1f;
-  height: 15vh;
+  height: 7vh;
   color: aliceblue;
   display: flex;
   align-items: center;
@@ -131,7 +131,7 @@ a.active,a:hover{
 .secao p{
 
 color:aliceblue;
-font-size: 20px;
+font-size: 25px;
 
 padding: 5px 50px;
 

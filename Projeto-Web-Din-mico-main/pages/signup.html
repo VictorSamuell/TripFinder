@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,8 @@
 
 </head>
 <body>
+
+    
     
     <nav>
         <input type="checkbox" id="check">
@@ -22,7 +25,7 @@
         <ul>
             <li><a href="menu.html">Home</a></li>
             <li><a href="form.html">Hotel</a></li>
-            <li><a class="active" href="signup.html">Log In</a></li>
+            <li><a class="active" href="signup.html">Consult</a></li>
             <li><a href="aboutus.html">About Us</a></li>
             <li><a href="feedback.html">Feedback</a></li>
         </ul>
@@ -36,67 +39,65 @@
 
     <div class="bodytest">
         <div class="container">
-            <h1 class="form-title">Cadastro</h1>
-            <form action="#">
-                <div class="main-user-info">
-                    <div class="user-input-box">
-                        <label for="FullName">Nome :</label>
-                        <input type="text"
-                        id="FullName"
-                        name="FullName"
-                        placeholder="Nome :"/>
-                    </div>
-                    <div class="user-input-box">
-                        <label for="lastName">Sobrenome :</label>
-                        <input type="text"
-                        id="lastName"
-                        name="lastName"
-                        placeholder="Sobrenome"/>
-                    </div>
-                    <div class="user-input-box">
-                        <label for="Email">Email :</label>
-                        <input type="text"
-                        id="Email"
-                        name="Email"
-                        placeholder="Email :"/>
-                    </div>
-                    <div class="user-input-box">
-                        <label for="phoneNumber">Telefone :</label>
-                        <input type="text"
-                        id="phoneNumber"
-                        name="phoneNumber"
-                        placeholder="Telefone"/>
-                    </div>
-                    <div class="user-input-box">
-                        <label for="password">Senha</label>
-                        <input type="password"
-                        id="password"
-                        name="password"
-                        placeholder="Senha"/>
-                    </div>
-                    <div class="user-input-box">
-                        <label for="confirmPassword">Confirmar Senha :</label>
-                        <input type="password"
-                        id="confirmPassword"
-                        name="confirmPassword"
-                        placeholder="Confirmar Senha"/>
-                    </div>
-                    <div class="gender-details-box">
-                        <span class="gender-title">Gênero</span>
-                        <div class="gender-category">
-                            <input type="radio" name="gender" id="male">
-                            <label for="male">Masculino</label>
-                            <input type="radio" name="gender" id="female">
-                            <label for="female">Feminino</label>
-                            <input type="radio" name="gender" id="other">
-                            <label for="other">Outro</label>
-                        </div>
-                    </div>
-                </div>
-                    <div class="form-submit-btn">
-                        <input type="submit" value="Register">
-                    </div>
+            
+            
+            <form 
+            class="formulario"
+            action="http://localhost:5000/php/consultaviagem.php">
+                
+                <input 
+                class = "verviagens"
+                type = "submit"
+                value= "Ver Viagens"
+                >
+            
+
             </form>
+
+            
+
+            <form 
+            class="formulario"
+            action="http://localhost:5000/php/deleteviagem.php" 
+            method="get"
+            >
+
+
+
+                
+                <input type="text"
+                class="caixaDeTexto"
+                id="id_viagem"
+                name="id_viagem"
+                placeholder="ID da Viagem"
+                />
+            
+
+                
+                <input 
+                class="deletarviagens"
+                type="submit" 
+                value="Deletar"
+                >
+            
+            
+            </form>
+
+            <form
+            class="formulario"
+            >
+
+                <a 
+                
+                class="updateviagens" 
+                href="update.html"
+                
+                >Update</a>
+
+            </form>
+            
+
+
         </div>
         </div>
         <footer class="rodape">
