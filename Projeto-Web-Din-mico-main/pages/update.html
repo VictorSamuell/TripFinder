@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <title>Projeto Web Dinâmico</title>
+
+</head>
+<body>
+
+    
+    
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">TripFinder</label>
+        <ul>
+            <li><a href="menu.html">Home</a></li>
+            <li><a href="form.html">Hotel</a></li>
+            <li><a class="active" href="signup.html">Consult</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+      
+
+
+
+
+
+
+    <div class="bodytest">
+        <div class="container">
+            
+            <h1 class="form-title">Atualizar Viagem</h1>
+
+
+            <form 
+            action="http://localhost:5000/php/updateviagem.php"
+            method="get"
+            class="formulario"
+            >
+                <div class="main-user-info">
+
+                    <div class="user-input-box">
+ 
+                        <label for="id_viagem"> ID da Viagem </label>
+                        <input type="text"
+                        id="id_viagem"
+                        name="id_viagem"
+                        placeholder="ID da Viagem"
+                        required
+                        />
+                        
+                    </div>
+
+                    <div class="user-input-box">
+
+                        <label for="FullName">Nome do Vendedor </label>
+                        <input type="text"
+                        id="FullName"
+                        name="FullName"
+                        placeholder="Nome do Vendedor"
+                        required
+                        />
+                        <p id="erro-nome" class="mensagem-erro">
+                            Nome deve ter entre 1 e 80 caractéres                            
+                        </p>
+                    </div>
+                    <div class="user-input-box">
+
+                        <label for="Locais">Local da Viagem </label>
+                        <input type="text"
+                        id="Locais"
+                        name="Locais"
+                        placeholder="Local "
+                        />
+                        <p id="erro-local" class="mensagem-erro">
+                            Local deve ter entre 1 e 120 caractéres                            
+                        </p>
+
+                    </div>
+                    <div class="user-input-box">
+
+                        <label for="Email">Email </label>
+                        <input type="text"
+                        id="Email"
+                        name="Email"
+                        placeholder="Email"
+                        />
+                        <p id="erro-email" class="mensagem-erro">
+                            Email deve ter entre 1 e 30 caractéres                            
+                        </p>
+
+                    </div>
+                    <div class="user-input-box">
+
+                        <label for="phoneNumber">Telefone </label>
+                        <input type="number"
+                        id="phoneNumber"
+                        name="phoneNumber"
+                        placeholder="Telefone"
+                        />
+                        <p id="erro-telefone" class="mensagem-erro">
+                            Telefone deve ter entre 1 e 15 caractéres                            
+                        </p>
+
+                    </div>
+                    <div class="user-input-box">
+
+                        <label for="Price"> Preço </label>
+                        <input type="number"
+                        id="Price"
+                        name="Price"
+                        placeholder="Preço"
+                        />
+                        <p id="erro-preco" class="mensagem-erro">
+                            Preço deve ter entre 1 e 10 caractéres                            
+                        </p>
+
+                    </div>
+                    <div class="user-input-box">
+
+                        <label for="Hotel"> Nome do Hotel</label>
+                        <input type="text"
+                        id="Hotel"
+                        name="Hotel"
+                        placeholder="Hotel"
+                        />
+                        <p id="erro-hotel" class="mensagem-erro">
+                            Hotel deve ter entre 1 e 90 caractéres                            
+                        </p>
+
+                    </div>
+                    <div class="user-input-box">
+
+                        <label for="gender"> Gênero</label>
+                        <input type="text"
+                        id="gender"
+                        name="gender"
+                        placeholder="Gênero"
+                        />
+                        <p id="erro-genero" class="mensagem-erro">
+                            Gênero deve ter entre 1 e 30 caractéres                            
+                        </p>
+
+                    </div>
+                    
+                    
+                </div>
+                    <div class="form-submit-btn">
+                        <input type="submit" value="Register">
+                    </div>
+            </form>
+
+
+
+        </div>
+        </div>
+        <footer class="rodape">
+            TripFinder ©
+        </footer>
+
+        <script type="text/javascript" src="./scripts/script.js"></script>
+        
+</body>
+</html>
